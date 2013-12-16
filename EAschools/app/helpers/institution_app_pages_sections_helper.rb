@@ -1,0 +1,2 @@
+module InstitutionAppPagesSectionsHelper
+end

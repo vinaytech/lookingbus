@@ -1,0 +1,100 @@
+<div class="row">  
+	<div class="container" style="background-color:#eef1f5;">  
+	<div class="col-lg-6">  
+		<table>
+			<tr> 
+				<td colspan="2">
+					<h1>  Anytime. Anywhere. </h1>
+					</td>
+
+				</tr>
+				<tr>
+					<td height="50px">&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr> 
+					<td width="100px;">
+					 
+					</td>
+					<td> <h3> Setup your Account  <%= image_tag "question.png", :size => '25x25'  -%>  </h3>
+					</td>
+				</tr> 
+				<tr> 
+					<td>  
+				  
+					</td>
+					<td> <h3>  Update your data <%= image_tag "question.png", :size => '25x25'  -%>  </h3>
+					</td>
+				</tr> 
+				<tr> 
+					<td> 
+					 
+					</td>
+					<td> <h3> Visualize your kids <%= image_tag "question.png", :size => '25x25'  -%>   </h3>
+					</td>
+				</tr> 
+				<tr> 
+					<td> 
+	
+					</td>
+					<td> <h3> Improve your kids results  <%= image_tag "question.png", :size => '25x25'  -%>   </h3>
+					</td>
+				</tr> 
+				<tr> 
+					<td>
+					</td>
+					<td> 
+					</td>
+				</tr>  
+			</table>
+
+		</div>  
+   <div class="col-lg-6">
+
+		<%= form_for @sign_up , :url => '', :html => {:method => :post, :id =>'home-page-user-signup'} do |f| %>  
+
+		<div class="col-lg-6 pull-right" style="width:355px !important;" > 
+			<table cellpadding="10" class="pull-right" style="padding-bottom:20px; width:370px !important;max-width:370px !important;"> 
+				<tr width="100%"> 
+					<td colspan="2"><div><button type="button" class="btn btn-primary btn-lg btn-block">Sign Up</button> </div>Its Free for 30 days </td>
+
+				</tr> 
+				<tr style="width:355px !important;"> 
+					<td>   
+						<%= f.text_field :first_name,  {placeholder: 'First Name', class: 'form-control required'}  %>  
+					</td> 
+					<td>   
+						<%= f.text_field :last_name,  {placeholder: 'Last Name', class: 'form-control required'}  %>    
+					</td>
+				</tr>
+
+				<tr style="width:355px !important;"> 
+					<td colspan="2" style="width:355px !important;">   
+						<%= f.text_field :email,  {placeholder: 'Email', class: 'form-control required'}  %> 
+					</td>
+				</tr>
+				<tr width="100%"> 
+					<td colspan="2"> 
+						<%= f.text_field :email_confirmation,  {placeholder: 'Re-enter Email ', class: 'form-control required'}  %> 
+					</td>
+				</tr>
+
+				<tr width="100%"> 
+					<td colspan="2">  
+						<%= f.text_field  :company_name, {placeholder: 'Institution Name', class: 'form-control  required'} %> 
+					</td>
+				</tr>
+
+			 
+				<tr width="100%"> 
+					<td> </td>
+					<td> <div class="pull-right">  <button class="btn btn-success btn-lg" value="Signup">Sign Up </button> </div></td>
+				</tr>
+			</table>
+		</div>   
+		
+		
+		<% end %>  
+		</div>  
+		</div>
+	</div>

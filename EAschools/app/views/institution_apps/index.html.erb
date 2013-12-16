@@ -1,0 +1,45 @@
+<h1>Listing institution_apps</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Institution</th>
+      <th>Name</th>
+      <th>Splash screen image</th>
+      <th>Splash screen url</th>
+      <th>Splash screen text</th>
+      <th>Splash screen slogans</th>
+      <th>Google url</th>
+      <th>App logo</th>
+      <th>App logo text</th>
+      <th>App logo url</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @institution_apps.each do |institution_app| %>
+      <tr>
+        <td><%= institution_app.institution_id %></td>
+        <td><%= institution_app.name %></td>
+        <td><%= institution_app.splash_screen_image %></td>
+        <td><%= institution_app.splash_screen_url %></td>
+        <td><%= institution_app.splash_screen_text %></td>
+        <td><%= institution_app.splash_screen_slogans %></td>
+        <td><%= institution_app.google_url %></td>
+        <td><%= institution_app.app_logo %></td>
+        <td><%= institution_app.app_logo_text %></td>
+        <td><%= institution_app.app_logo_url %></td>
+        <td><%= link_to 'Show', institution_app %></td>
+        <td><%= link_to 'Edit', edit_institution_app_path(institution_app) %></td>
+        <td><%= link_to 'Destroy', institution_app, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Institution app', new_institution_app_path %>

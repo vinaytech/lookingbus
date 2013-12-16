@@ -1,0 +1,49 @@
+<%= form_for(@institutions_branch) do |f| %>
+  <% if @institutions_branch.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@institutions_branch.errors.count, "error") %> prohibited this institutions_branch from being saved:</h2>
+
+      <ul>
+      <% @institutions_branch.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :address_1 %><br>
+    <%= f.text_field :address_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :address_2 %><br>
+    <%= f.text_field :address_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br>
+    <%= f.text_field :state %>
+  </div>
+  <div class="field">
+    <%= f.label :country %><br>
+    <%= f.text_field :country %>
+  </div>
+  <div class="field">
+    <%= f.label :zip_code %><br>
+    <%= f.text_field :zip_code %>
+  </div>
+  <div class="field">
+    <%= f.label :institution_id %><br>
+    <%= f.number_field :institution_id %>
+  </div>
+  <div class="field">
+    <%= f.label :land_mark %><br>
+    <%= f.text_field :land_mark %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.check_box :status %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

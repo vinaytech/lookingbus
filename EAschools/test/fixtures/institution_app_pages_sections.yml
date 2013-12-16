@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  institution_app_pages_id: 1
+  head_name: MyString
+  body_text: MyText
+
+two:
+  institution_app_pages_id: 1
+  head_name: MyString
+  body_text: MyText

@@ -1,0 +1,41 @@
+<h1>Listing institutions_branches</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Address 1</th>
+      <th>Address 2</th>
+      <th>State</th>
+      <th>Country</th>
+      <th>Zip code</th>
+      <th>Institution</th>
+      <th>Land mark</th>
+      <th>Status</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @institutions_branches.each do |institutions_branch| %>
+      <tr>
+        <td><%= institutions_branch.address_1 %></td>
+        <td><%= institutions_branch.address_2 %></td>
+        <td><%= institutions_branch.state %></td>
+        <td><%= institutions_branch.country %></td>
+        <td><%= institutions_branch.zip_code %></td>
+        <td><%= institutions_branch.institution_id %></td>
+        <td><%= institutions_branch.land_mark %></td>
+        <td><%= institutions_branch.status %></td>
+        <td><%= link_to 'Show', institutions_branch %></td>
+        <td><%= link_to 'Edit', edit_institutions_branch_path(institutions_branch) %></td>
+        <td><%= link_to 'Destroy', institutions_branch, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Institutions branch', new_institutions_branch_path %>

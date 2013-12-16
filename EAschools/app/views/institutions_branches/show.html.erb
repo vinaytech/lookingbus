@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Address 1:</strong>
+  <%= @institutions_branch.address_1 %>
+</p>
+
+<p>
+  <strong>Address 2:</strong>
+  <%= @institutions_branch.address_2 %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @institutions_branch.state %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @institutions_branch.country %>
+</p>
+
+<p>
+  <strong>Zip code:</strong>
+  <%= @institutions_branch.zip_code %>
+</p>
+
+<p>
+  <strong>Institution:</strong>
+  <%= @institutions_branch.institution_id %>
+</p>
+
+<p>
+  <strong>Land mark:</strong>
+  <%= @institutions_branch.land_mark %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @institutions_branch.status %>
+</p>
+
+<%= link_to 'Edit', edit_institutions_branch_path(@institutions_branch) %> |
+<%= link_to 'Back', institutions_branches_path %>

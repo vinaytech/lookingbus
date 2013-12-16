@@ -1,0 +1,63 @@
+<h1>Listing users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Middle name</th>
+      <th>Email</th>
+      <th>Password digest</th>
+      <th>Role</th>
+      <th>Phone number</th>
+      <th>Mobile number</th>
+      <th>Address 1</th>
+      <th>Address 2</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Country</th>
+      <th>Zip code</th>
+      <th>Institution</th>
+      <th>Created by</th>
+      <th>Created through</th>
+      <th>Status</th>
+      <th>Blocked</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.first_name %></td>
+        <td><%= user.last_name %></td>
+        <td><%= user.middle_name %></td>
+        <td><%= user.email %></td>
+        <td><%= user.password_digest %></td>
+        <td><%= user.role_id %></td>
+        <td><%= user.phone_number %></td>
+        <td><%= user.mobile_number %></td>
+        <td><%= user.address_1 %></td>
+        <td><%= user.address_2 %></td>
+        <td><%= user.city %></td>
+        <td><%= user.state %></td>
+        <td><%= user.country %></td>
+        <td><%= user.zip_code %></td>
+        <td><%= user.institution_id %></td>
+        <td><%= user.created_by %></td>
+        <td><%= user.created_through %></td>
+        <td><%= user.status %></td>
+        <td><%= user.blocked %></td>
+        <td><%= link_to 'Show', user %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User', new_user_path %>

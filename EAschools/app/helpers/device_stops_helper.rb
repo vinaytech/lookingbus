@@ -1,0 +1,2 @@
+module DeviceStopsHelper
+end

@@ -1,0 +1,57 @@
+<%= form_for(@institution_app) do |f| %>
+  <% if @institution_app.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@institution_app.errors.count, "error") %> prohibited this institution_app from being saved:</h2>
+
+      <ul>
+      <% @institution_app.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :institution_id %><br>
+    <%= f.number_field :institution_id %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :splash_screen_image %><br>
+    <%= f.check_box :splash_screen_image %>
+  </div>
+  <div class="field">
+    <%= f.label :splash_screen_url %><br>
+    <%= f.text_field :splash_screen_url %>
+  </div>
+  <div class="field">
+    <%= f.label :splash_screen_text %><br>
+    <%= f.text_area :splash_screen_text %>
+  </div>
+  <div class="field">
+    <%= f.label :splash_screen_slogans %><br>
+    <%= f.text_field :splash_screen_slogans %>
+  </div>
+  <div class="field">
+    <%= f.label :google_url %><br>
+    <%= f.text_area :google_url %>
+  </div>
+  <div class="field">
+    <%= f.label :app_logo %><br>
+    <%= f.check_box :app_logo %>
+  </div>
+  <div class="field">
+    <%= f.label :app_logo_text %><br>
+    <%= f.text_field :app_logo_text %>
+  </div>
+  <div class="field">
+    <%= f.label :app_logo_url %><br>
+    <%= f.check_box :app_logo_url %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

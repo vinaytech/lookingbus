@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @account.name %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @account.price %>
+</p>
+
+<p>
+  <strong>Vehicle number allowed:</strong>
+  <%= @account.vehicle_number_allowed %>
+</p>
+
+<p>
+  <strong>Institution number allowed:</strong>
+  <%= @account.institution_number_allowed %>
+</p>
+
+<p>
+  <strong>User number allowed:</strong>
+  <%= @account.user_number_allowed %>
+</p>
+
+<p>
+  <strong>Account type:</strong>
+  <%= @account.account_type %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @account.status %>
+</p>
+
+<%= link_to 'Edit', edit_account_path(@account) %> |
+<%= link_to 'Back', accounts_path %>

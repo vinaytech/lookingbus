@@ -1,0 +1,29 @@
+<%= form_for(@institution_app_pages_section) do |f| %>
+  <% if @institution_app_pages_section.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@institution_app_pages_section.errors.count, "error") %> prohibited this institution_app_pages_section from being saved:</h2>
+
+      <ul>
+      <% @institution_app_pages_section.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :institution_app_pages_id %><br>
+    <%= f.number_field :institution_app_pages_id %>
+  </div>
+  <div class="field">
+    <%= f.label :head_name %><br>
+    <%= f.text_field :head_name %>
+  </div>
+  <div class="field">
+    <%= f.label :body_text %><br>
+    <%= f.text_area :body_text %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

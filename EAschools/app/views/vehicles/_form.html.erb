@@ -1,0 +1,49 @@
+<%= form_for(@vehicle) do |f| %>
+  <% if @vehicle.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@vehicle.errors.count, "error") %> prohibited this vehicle from being saved:</h2>
+
+      <ul>
+      <% @vehicle.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :vehicle_number %><br>
+    <%= f.text_field :vehicle_number %>
+  </div>
+  <div class="field">
+    <%= f.label :vehicle_key %><br>
+    <%= f.text_field :vehicle_key %>
+  </div>
+  <div class="field">
+    <%= f.label :institution_id %><br>
+    <%= f.number_field :institution_id %>
+  </div>
+  <div class="field">
+    <%= f.label :device_id %><br>
+    <%= f.number_field :device_id %>
+  </div>
+  <div class="field">
+    <%= f.label :vehicle_type_id %><br>
+    <%= f.number_field :vehicle_type_id %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.check_box :status %>
+  </div>
+  <div class="field">
+    <%= f.label :bolcked %><br>
+    <%= f.check_box :bolcked %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

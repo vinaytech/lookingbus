@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Institution app pages:</strong>
+  <%= @institution_app_pages_section.institution_app_pages_id %>
+</p>
+
+<p>
+  <strong>Head name:</strong>
+  <%= @institution_app_pages_section.head_name %>
+</p>
+
+<p>
+  <strong>Body text:</strong>
+  <%= @institution_app_pages_section.body_text %>
+</p>
+
+<%= link_to 'Edit', edit_institution_app_pages_section_path(@institution_app_pages_section) %> |
+<%= link_to 'Back', institution_app_pages_sections_path %>

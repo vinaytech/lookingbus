@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @vehicle.user_id %>
+</p>
+
+<p>
+  <strong>Vehicle number:</strong>
+  <%= @vehicle.vehicle_number %>
+</p>
+
+<p>
+  <strong>Vehicle key:</strong>
+  <%= @vehicle.vehicle_key %>
+</p>
+
+<p>
+  <strong>Institution:</strong>
+  <%= @vehicle.institution_id %>
+</p>
+
+<p>
+  <strong>Device:</strong>
+  <%= @vehicle.device_id %>
+</p>
+
+<p>
+  <strong>Vehicle type:</strong>
+  <%= @vehicle.vehicle_type_id %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @vehicle.status %>
+</p>
+
+<p>
+  <strong>Bolcked:</strong>
+  <%= @vehicle.bolcked %>
+</p>
+
+<%= link_to 'Edit', edit_vehicle_path(@vehicle) %> |
+<%= link_to 'Back', vehicles_path %>

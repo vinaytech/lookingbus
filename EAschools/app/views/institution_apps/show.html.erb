@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Institution:</strong>
+  <%= @institution_app.institution_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @institution_app.name %>
+</p>
+
+<p>
+  <strong>Splash screen image:</strong>
+  <%= @institution_app.splash_screen_image %>
+</p>
+
+<p>
+  <strong>Splash screen url:</strong>
+  <%= @institution_app.splash_screen_url %>
+</p>
+
+<p>
+  <strong>Splash screen text:</strong>
+  <%= @institution_app.splash_screen_text %>
+</p>
+
+<p>
+  <strong>Splash screen slogans:</strong>
+  <%= @institution_app.splash_screen_slogans %>
+</p>
+
+<p>
+  <strong>Google url:</strong>
+  <%= @institution_app.google_url %>
+</p>
+
+<p>
+  <strong>App logo:</strong>
+  <%= @institution_app.app_logo %>
+</p>
+
+<p>
+  <strong>App logo text:</strong>
+  <%= @institution_app.app_logo_text %>
+</p>
+
+<p>
+  <strong>App logo url:</strong>
+  <%= @institution_app.app_logo_url %>
+</p>
+
+<%= link_to 'Edit', edit_institution_app_path(@institution_app) %> |
+<%= link_to 'Back', institution_apps_path %>

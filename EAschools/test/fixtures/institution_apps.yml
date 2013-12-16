@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  institution_id: 1
+  name: MyString
+  splash_screen_image: false
+  splash_screen_url: MyString
+  splash_screen_text: MyText
+  splash_screen_slogans: MyString
+  google_url: MyText
+  app_logo: false
+  app_logo_text: MyString
+  app_logo_url: false
+
+two:
+  institution_id: 1
+  name: MyString
+  splash_screen_image: false
+  splash_screen_url: MyString
+  splash_screen_text: MyText
+  splash_screen_slogans: MyString
+  google_url: MyText
+  app_logo: false
+  app_logo_text: MyString
+  app_logo_url: false

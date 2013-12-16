@@ -1,0 +1,31 @@
+<h1>Listing institution_app_pages_sections</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Institution app pages</th>
+      <th>Head name</th>
+      <th>Body text</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @institution_app_pages_sections.each do |institution_app_pages_section| %>
+      <tr>
+        <td><%= institution_app_pages_section.institution_app_pages_id %></td>
+        <td><%= institution_app_pages_section.head_name %></td>
+        <td><%= institution_app_pages_section.body_text %></td>
+        <td><%= link_to 'Show', institution_app_pages_section %></td>
+        <td><%= link_to 'Edit', edit_institution_app_pages_section_path(institution_app_pages_section) %></td>
+        <td><%= link_to 'Destroy', institution_app_pages_section, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Institution app pages section', new_institution_app_pages_section_path %>

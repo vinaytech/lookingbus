@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Institution app:</strong>
+  <%= @institution_app_page.institution_app_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @institution_app_page.name %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @institution_app_page.url %>
+</p>
+
+<%= link_to 'Edit', edit_institution_app_page_path(@institution_app_page) %> |
+<%= link_to 'Back', institution_app_pages_path %>

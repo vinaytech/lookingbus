@@ -1,0 +1,99 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @user.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @user.last_name %>
+</p>
+
+<p>
+  <strong>Middle name:</strong>
+  <%= @user.middle_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Password digest:</strong>
+  <%= @user.password_digest %>
+</p>
+
+<p>
+  <strong>Role:</strong>
+  <%= @user.role_id %>
+</p>
+
+<p>
+  <strong>Phone number:</strong>
+  <%= @user.phone_number %>
+</p>
+
+<p>
+  <strong>Mobile number:</strong>
+  <%= @user.mobile_number %>
+</p>
+
+<p>
+  <strong>Address 1:</strong>
+  <%= @user.address_1 %>
+</p>
+
+<p>
+  <strong>Address 2:</strong>
+  <%= @user.address_2 %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @user.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @user.state %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @user.country %>
+</p>
+
+<p>
+  <strong>Zip code:</strong>
+  <%= @user.zip_code %>
+</p>
+
+<p>
+  <strong>Institution:</strong>
+  <%= @user.institution_id %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @user.created_by %>
+</p>
+
+<p>
+  <strong>Created through:</strong>
+  <%= @user.created_through %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @user.status %>
+</p>
+
+<p>
+  <strong>Blocked:</strong>
+  <%= @user.blocked %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

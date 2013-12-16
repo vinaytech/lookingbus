@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Device:</strong>
+  <%= @device_stop.device_id %>
+</p>
+
+<p>
+  <strong>Stop name:</strong>
+  <%= @device_stop.stop_name %>
+</p>
+
+<p>
+  <strong>Stop lan:</strong>
+  <%= @device_stop.stop_lan %>
+</p>
+
+<p>
+  <strong>Stop lat:</strong>
+  <%= @device_stop.stop_lat %>
+</p>
+
+<p>
+  <strong>Stop time:</strong>
+  <%= @device_stop.stop_time %>
+</p>
+
+<p>
+  <strong>Number of passanger:</strong>
+  <%= @device_stop.number_of_passanger %>
+</p>
+
+<%= link_to 'Edit', edit_device_stop_path(@device_stop) %> |
+<%= link_to 'Back', device_stops_path %>

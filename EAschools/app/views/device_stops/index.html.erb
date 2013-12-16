@@ -1,0 +1,37 @@
+<h1>Listing device_stops</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Device</th>
+      <th>Stop name</th>
+      <th>Stop lan</th>
+      <th>Stop lat</th>
+      <th>Stop time</th>
+      <th>Number of passanger</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @device_stops.each do |device_stop| %>
+      <tr>
+        <td><%= device_stop.device_id %></td>
+        <td><%= device_stop.stop_name %></td>
+        <td><%= device_stop.stop_lan %></td>
+        <td><%= device_stop.stop_lat %></td>
+        <td><%= device_stop.stop_time %></td>
+        <td><%= device_stop.number_of_passanger %></td>
+        <td><%= link_to 'Show', device_stop %></td>
+        <td><%= link_to 'Edit', edit_device_stop_path(device_stop) %></td>
+        <td><%= link_to 'Destroy', device_stop, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Device stop', new_device_stop_path %>

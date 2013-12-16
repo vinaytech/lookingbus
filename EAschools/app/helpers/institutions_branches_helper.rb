@@ -1,0 +1,2 @@
+module InstitutionsBranchesHelper
+end

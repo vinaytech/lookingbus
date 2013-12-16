@@ -1,0 +1,37 @@
+<h1>Listing institutions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Number of vehicle</th>
+      <th>Institution key</th>
+      <th>Number of institution branch</th>
+      <th>Status</th>
+      <th>Account type</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @institutions.each do |institution| %>
+      <tr>
+        <td><%= institution.name %></td>
+        <td><%= institution.number_of_vehicle %></td>
+        <td><%= institution.institution_key %></td>
+        <td><%= institution.number_of_institution_branch %></td>
+        <td><%= institution.status %></td>
+        <td><%= institution.account_type_id %></td>
+        <td><%= link_to 'Show', institution %></td>
+        <td><%= link_to 'Edit', edit_institution_path(institution) %></td>
+        <td><%= link_to 'Destroy', institution, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Institution', new_institution_path %>

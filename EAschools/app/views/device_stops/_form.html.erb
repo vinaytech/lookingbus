@@ -1,0 +1,41 @@
+<%= form_for(@device_stop) do |f| %>
+  <% if @device_stop.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@device_stop.errors.count, "error") %> prohibited this device_stop from being saved:</h2>
+
+      <ul>
+      <% @device_stop.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :device_id %><br>
+    <%= f.number_field :device_id %>
+  </div>
+  <div class="field">
+    <%= f.label :stop_name %><br>
+    <%= f.text_field :stop_name %>
+  </div>
+  <div class="field">
+    <%= f.label :stop_lan %><br>
+    <%= f.text_field :stop_lan %>
+  </div>
+  <div class="field">
+    <%= f.label :stop_lat %><br>
+    <%= f.text_field :stop_lat %>
+  </div>
+  <div class="field">
+    <%= f.label :stop_time %><br>
+    <%= f.datetime_select :stop_time %>
+  </div>
+  <div class="field">
+    <%= f.label :number_of_passanger %><br>
+    <%= f.number_field :number_of_passanger %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
